@@ -12,15 +12,19 @@ struct SecondView: View {
     @StateObject private var network = Network()
     @StateObject private var audioPlayer : AudioPlayerViewModel
     
-    @State private var counter = 0
+    @State private var counter = 0.0
+    @State private var increment = 1.0
     @State private var isUpArrowPressed = false
     @State private var timer: Timer?
+    @State private var time = 0.0
+    @State private var totaltime = 0.0
     
     init()
     {
         let network = Network() // Initialize the network
         _audioPlayer = StateObject(wrappedValue: AudioPlayerViewModel(network: network))
         network.fetchAudioURLs() // Fetch the audio URLs on initialization
+//        audioPlayer.player!.rate = 2.0
     }
     
     var body: some View {
@@ -33,21 +37,20 @@ struct SecondView: View {
                     .foregroundColor(.white)
                 
                 // Timer (01:11:02)
-                Text("01:11:02")
+            Text("01:11:02")
                     .font(.system(size: 35, weight: .bold, design: .monospaced))
                     .foregroundColor(.white)
                 
-                // Heart Rate
+                // Steps
                 HStack(spacing: 5) {
-                    Text("168")
-                        .font(.system(size: 20, weight: .medium, design: .default))
-                        .foregroundColor(.white)
-                    
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "figure.step.training")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 15, height: 15)
-                        .foregroundColor(.red)
+                        .foregroundColor(.white)
+                    Text("\(Int(counter)) steps/min")
+                        .font(.system(size: 20, weight: .medium, design: .default))
+                        .foregroundColor(.white)
                 }
                 
                 Spacer()
@@ -100,35 +103,33 @@ struct SecondView: View {
             .onAppear {
                         // Set up the timer to increase the counter when the up arrow is pressed
                         setupTimer()
+//                        audioPlayer.togglePlayPause()
+//                audioPlayer.player!.rate = 2.0
                     }
                     .onDisappear {
                         // Invalidate the timer when the view disappears
                         timer?.invalidate()
                     }
-                    .onReceive(NotificationCenter.default.publisher(for: NSEvent.keyDownNotification)) { notification in
-                        if let event = notification.object as? NSEvent {
-                            // Detect if the up arrow key is pressed
-                            if event.keyCode == 126 { // keyCode for up arrow is 126
-                                isUpArrowPressed = true
-                            }
-                        }
-                    }
-                    .onReceive(NotificationCenter.default.publisher(for: NSEvent.keyUpNotification)) { notification in
-                        if let event = notification.object as? NSEvent {
-                            // Detect if the up arrow key is released
-                            if event.keyCode == 126 { // keyCode for up arrow is 126
-                                isUpArrowPressed = false
-                            }
-                        }
-                    }
                 }
-    func setupTimer() {
+        func setupTimer() {
             timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-                if isUpArrowPressed {
-                    counter += 1
+                time += 0.1
+                totaltime += 0.1
+                counter += increment / (time * 2)
+                if (time > 8) {
+                    if audioPlayer.currentTrackIndex != audioPlayer.audioURLs.count - 1 {
+                        audioPlayer.nextTrack()
+                        increment = increment + 1
+                        time = 0.0
+                    }
                 }
             }
         }
+    func formattedTime(seconds: Double) -> String {
+            let hours = Int(seconds) / 3600
+            let minutes = (Int(seconds) % 3600) / 60
+            let remainingSeconds = Int(seconds) % 60
+            return String(format: "%02d:%02d:%02d", hours, minutes, remainingSeconds)
         }
 
 }

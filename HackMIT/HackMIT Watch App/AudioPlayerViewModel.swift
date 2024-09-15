@@ -4,7 +4,7 @@ import AVFoundation
 import Combine
 
 class AudioPlayerViewModel: ObservableObject {
-    var player: AVPlayer?
+    @Published var player: AVPlayer?
     @Published var isPlaying = false
     @Published var currentTrackIndex = 0
     @EnvironmentObject var network: Network
@@ -44,7 +44,9 @@ class AudioPlayerViewModel: ObservableObject {
             print("playing: ")
             print(audioURLs[currentTrackIndex])
             player = AVPlayer(url: audioURL)
+            player?.automaticallyWaitsToMinimizeStalling = false
             player?.play()
+            player?.rate += 0.7 * Float(currentTrackIndex)
             isPlaying = true
         }
     }
