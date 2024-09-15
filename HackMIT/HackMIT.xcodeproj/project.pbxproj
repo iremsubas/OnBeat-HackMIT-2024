@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67B69BE02C968593007FF661 /* HackMIT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67B69BDF2C968593007FF661 /* HackMIT Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67B69BE52C968593007FF661 /* HackMITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BE42C968593007FF661 /* HackMITApp.swift */; };
+		67B69BE72C968593007FF661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BE62C968593007FF661 /* ContentView.swift */; };
+		67B69BE92C968594007FF661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B69BE82C968594007FF661 /* Assets.xcassets */; };
+		67B69BEC2C968594007FF661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B69BEB2C968594007FF661 /* Preview Assets.xcassets */; };
+		67B69BF62C968595007FF661 /* HackMIT_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BF52C968595007FF661 /* HackMIT_Watch_AppTests.swift */; };
+		67B69C002C968595007FF661 /* HackMIT_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BFF2C968595007FF661 /* HackMIT_Watch_AppUITests.swift */; };
+		67B69C022C968595007FF661 /* HackMIT_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69C012C968595007FF661 /* HackMIT_Watch_AppUITestsLaunchTests.swift */; };
+		67B69C132C96870D007FF661 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B69C122C96870D007FF661 /* logo.png */; };
+		67B69C152C96A1C1007FF661 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69C142C96A1C1007FF661 /* SecondView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67B69BE12C968593007FF661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B69BD32C968593007FF661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B69BDE2C968593007FF661;
+			remoteInfo = "HackMIT Watch App";
+		};
+		67B69BF22C968595007FF661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B69BD32C968593007FF661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B69BDE2C968593007FF661;
+			remoteInfo = "HackMIT Watch App";
+		};
+		67B69BFC2C968595007FF661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B69BD32C968593007FF661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B69BDE2C968593007FF661;
+			remoteInfo = "HackMIT Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67B69C082C968595007FF661 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				67B69BE02C968593007FF661 /* HackMIT Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		67B69BD92C968593007FF661 /* HackMIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B69BDF2C968593007FF661 /* HackMIT Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackMIT Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B69BE42C968593007FF661 /* HackMITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackMITApp.swift; sourceTree = "<group>"; };
+		67B69BE62C968593007FF661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67B69BE82C968594007FF661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B69BEB2C968594007FF661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67B69BF12C968595007FF661 /* HackMIT Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackMIT Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B69BF52C968595007FF661 /* HackMIT_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackMIT_Watch_AppTests.swift; sourceTree = "<group>"; };
+		67B69BFB2C968595007FF661 /* HackMIT Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackMIT Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B69BFF2C968595007FF661 /* HackMIT_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackMIT_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		67B69C012C968595007FF661 /* HackMIT_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackMIT_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67B69C122C96870D007FF661 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		67B69C142C96A1C1007FF661 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67B69BDC2C968593007FF661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BEE2C968595007FF661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BF82C968595007FF661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67B69BD22C968593007FF661 = {
+			isa = PBXGroup;
+			children = (
+				67B69BE32C968593007FF661 /* HackMIT Watch App */,
+				67B69BF42C968595007FF661 /* HackMIT Watch AppTests */,
+				67B69BFE2C968595007FF661 /* HackMIT Watch AppUITests */,
+				67B69BDA2C968593007FF661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67B69BDA2C968593007FF661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67B69BD92C968593007FF661 /* HackMIT.app */,
+				67B69BDF2C968593007FF661 /* HackMIT Watch App.app */,
+				67B69BF12C968595007FF661 /* HackMIT Watch AppTests.xctest */,
+				67B69BFB2C968595007FF661 /* HackMIT Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67B69BE32C968593007FF661 /* HackMIT Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				67B69C122C96870D007FF661 /* logo.png */,
+				67B69C142C96A1C1007FF661 /* SecondView.swift */,
+				67B69BE42C968593007FF661 /* HackMITApp.swift */,
+				67B69BE62C968593007FF661 /* ContentView.swift */,
+				67B69BE82C968594007FF661 /* Assets.xcassets */,
+				67B69BEA2C968594007FF661 /* Preview Content */,
+			);
+			path = "HackMIT Watch App";
+			sourceTree = "<group>";
+		};
+		67B69BEA2C968594007FF661 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67B69BEB2C968594007FF661 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67B69BF42C968595007FF661 /* HackMIT Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				67B69BF52C968595007FF661 /* HackMIT_Watch_AppTests.swift */,
+			);
+			path = "HackMIT Watch AppTests";
+			sourceTree = "<group>";
+		};
+		67B69BFE2C968595007FF661 /* HackMIT Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67B69BFF2C968595007FF661 /* HackMIT_Watch_AppUITests.swift */,
+				67B69C012C968595007FF661 /* HackMIT_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "HackMIT Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67B69BD82C968593007FF661 /* HackMIT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B69C092C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT" */;
+			buildPhases = (
+				67B69BD72C968593007FF661 /* Resources */,
+				67B69C082C968595007FF661 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B69BE22C968593007FF661 /* PBXTargetDependency */,
+			);
+			name = HackMIT;
+			productName = HackMIT;
+			productReference = 67B69BD92C968593007FF661 /* HackMIT.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		67B69BDE2C968593007FF661 /* HackMIT Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B69C052C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch App" */;
+			buildPhases = (
+				67B69BDB2C968593007FF661 /* Sources */,
+				67B69BDC2C968593007FF661 /* Frameworks */,
+				67B69BDD2C968593007FF661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HackMIT Watch App";
+			productName = "HackMIT Watch App";
+			productReference = 67B69BDF2C968593007FF661 /* HackMIT Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67B69BF02C968595007FF661 /* HackMIT Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B69C0C2C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch AppTests" */;
+			buildPhases = (
+				67B69BED2C968595007FF661 /* Sources */,
+				67B69BEE2C968595007FF661 /* Frameworks */,
+				67B69BEF2C968595007FF661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B69BF32C968595007FF661 /* PBXTargetDependency */,
+			);
+			name = "HackMIT Watch AppTests";
+			productName = "HackMIT Watch AppTests";
+			productReference = 67B69BF12C968595007FF661 /* HackMIT Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67B69BFA2C968595007FF661 /* HackMIT Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B69C0F2C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch AppUITests" */;
+			buildPhases = (
+				67B69BF72C968595007FF661 /* Sources */,
+				67B69BF82C968595007FF661 /* Frameworks */,
+				67B69BF92C968595007FF661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B69BFD2C968595007FF661 /* PBXTargetDependency */,
+			);
+			name = "HackMIT Watch AppUITests";
+			productName = "HackMIT Watch AppUITests";
+			productReference = 67B69BFB2C968595007FF661 /* HackMIT Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67B69BD32C968593007FF661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					67B69BD82C968593007FF661 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					67B69BDE2C968593007FF661 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					67B69BF02C968595007FF661 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 67B69BDE2C968593007FF661;
+					};
+					67B69BFA2C968595007FF661 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 67B69BDE2C968593007FF661;
+					};
+				};
+			};
+			buildConfigurationList = 67B69BD62C968593007FF661 /* Build configuration list for PBXProject "HackMIT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67B69BD22C968593007FF661;
+			productRefGroup = 67B69BDA2C968593007FF661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67B69BD82C968593007FF661 /* HackMIT */,
+				67B69BDE2C968593007FF661 /* HackMIT Watch App */,
+				67B69BF02C968595007FF661 /* HackMIT Watch AppTests */,
+				67B69BFA2C968595007FF661 /* HackMIT Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67B69BD72C968593007FF661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BDD2C968593007FF661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B69BEC2C968594007FF661 /* Preview Assets.xcassets in Resources */,
+				67B69BE92C968594007FF661 /* Assets.xcassets in Resources */,
+				67B69C132C96870D007FF661 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BEF2C968595007FF661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BF92C968595007FF661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67B69BDB2C968593007FF661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B69C152C96A1C1007FF661 /* SecondView.swift in Sources */,
+				67B69BE72C968593007FF661 /* ContentView.swift in Sources */,
+				67B69BE52C968593007FF661 /* HackMITApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BED2C968595007FF661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B69BF62C968595007FF661 /* HackMIT_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B69BF72C968595007FF661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B69C022C968595007FF661 /* HackMIT_Watch_AppUITestsLaunchTests.swift in Sources */,
+				67B69C002C968595007FF661 /* HackMIT_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67B69BE22C968593007FF661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B69BDE2C968593007FF661 /* HackMIT Watch App */;
+			targetProxy = 67B69BE12C968593007FF661 /* PBXContainerItemProxy */;
+		};
+		67B69BF32C968595007FF661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B69BDE2C968593007FF661 /* HackMIT Watch App */;
+			targetProxy = 67B69BF22C968595007FF661 /* PBXContainerItemProxy */;
+		};
+		67B69BFD2C968595007FF661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B69BDE2C968593007FF661 /* HackMIT Watch App */;
+			targetProxy = 67B69BFC2C968595007FF661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67B69C032C968595007FF661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67B69C042C968595007FF661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		67B69C062C968595007FF661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackMIT Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HackMIT;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iremsubas.HackMIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		67B69C072C968595007FF661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackMIT Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HackMIT;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iremsubas.HackMIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		67B69C0A2C968595007FF661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				INFOPLIST_KEY_CFBundleDisplayName = HackMIT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iremsubas.HackMIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67B69C0B2C968595007FF661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				INFOPLIST_KEY_CFBundleDisplayName = HackMIT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iremsubas.HackMIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67B69C0D2C968595007FF661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iremsubas.HackMIT-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackMIT Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackMIT Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		67B69C0E2C968595007FF661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iremsubas.HackMIT-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackMIT Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackMIT Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		67B69C102C968595007FF661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iremsubas.HackMIT-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HackMIT Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		67B69C112C968595007FF661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8MHZG7ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iremsubas.HackMIT-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HackMIT Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67B69BD62C968593007FF661 /* Build configuration list for PBXProject "HackMIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B69C032C968595007FF661 /* Debug */,
+				67B69C042C968595007FF661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B69C052C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B69C062C968595007FF661 /* Debug */,
+				67B69C072C968595007FF661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B69C092C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B69C0A2C968595007FF661 /* Debug */,
+				67B69C0B2C968595007FF661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B69C0C2C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B69C0D2C968595007FF661 /* Debug */,
+				67B69C0E2C968595007FF661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B69C0F2C968595007FF661 /* Build configuration list for PBXNativeTarget "HackMIT Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B69C102C968595007FF661 /* Debug */,
+				67B69C112C968595007FF661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67B69BD32C968593007FF661 /* Project object */;
+}
