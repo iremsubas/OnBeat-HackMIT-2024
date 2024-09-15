@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B40B912C970A3600E499B6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B40B902C970A3600E499B6 /* Request.swift */; };
+		35B40B932C970AA500E499B6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B40B922C970AA500E499B6 /* Network.swift */; };
+		35B40B952C970E8500E499B6 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B40B942C970E8500E499B6 /* AudioPlayerViewModel.swift */; };
 		67B69BE02C968593007FF661 /* HackMIT Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67B69BDF2C968593007FF661 /* HackMIT Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		67B69BE52C968593007FF661 /* HackMITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BE42C968593007FF661 /* HackMITApp.swift */; };
 		67B69BE72C968593007FF661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B69BE62C968593007FF661 /* ContentView.swift */; };
@@ -58,6 +61,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35B40B902C970A3600E499B6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		35B40B922C970AA500E499B6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		35B40B942C970E8500E499B6 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		67B69BD92C968593007FF661 /* HackMIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackMIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B69BDF2C968593007FF661 /* HackMIT Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackMIT Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B69BE42C968593007FF661 /* HackMITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackMITApp.swift; sourceTree = "<group>"; };
@@ -124,10 +130,13 @@
 			children = (
 				67B69C122C96870D007FF661 /* logo.png */,
 				67B69C142C96A1C1007FF661 /* SecondView.swift */,
+				35B40B902C970A3600E499B6 /* Request.swift */,
 				67B69BE42C968593007FF661 /* HackMITApp.swift */,
 				67B69BE62C968593007FF661 /* ContentView.swift */,
 				67B69BE82C968594007FF661 /* Assets.xcassets */,
 				67B69BEA2C968594007FF661 /* Preview Content */,
+				35B40B922C970AA500E499B6 /* Network.swift */,
+				35B40B942C970E8500E499B6 /* AudioPlayerViewModel.swift */,
 			);
 			path = "HackMIT Watch App";
 			sourceTree = "<group>";
@@ -316,8 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B40B932C970AA500E499B6 /* Network.swift in Sources */,
 				67B69C152C96A1C1007FF661 /* SecondView.swift in Sources */,
+				35B40B912C970A3600E499B6 /* Request.swift in Sources */,
 				67B69BE72C968593007FF661 /* ContentView.swift in Sources */,
+				35B40B952C970E8500E499B6 /* AudioPlayerViewModel.swift in Sources */,
 				67B69BE52C968593007FF661 /* HackMITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

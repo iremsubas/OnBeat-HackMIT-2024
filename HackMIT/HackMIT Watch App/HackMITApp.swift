@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct HackMIT_Watch_AppApp: App {
+    var network = Network()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 ContentView()
+                    .environmentObject(network)
             }
         }
     }
